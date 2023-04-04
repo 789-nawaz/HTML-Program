@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Position Task</title>
+    <style>
+        .parent{
+            border:1px solid grey;
+            background-color: lightgrey;
+            height: 1000px;
+            width: 2000px;
+        }
+        .container{
+            border:2px solid black;
+            width:120px;
+            height:120px;
+            margin: 4px;
+            display: inline-block;
+        }
+        #task3{
+            position: fixed;
+            right:10px;
+            bottom:10px;
+            background-color: darkgoldenrod;
+        }
+        #task6{
+            position:sticky;
+            top:15px;
+            border: 2px solid black;
+            height:50px;
+            width:397px;
+            margin:5px;
+            background-color: aliceblue;
+        }
+        #task4{
+            position:absolute;
+            left: 250px;
+            bottom:270px;
+            background-color: aqua;
+            z-index: 1;
+        }
+        #task2{
+            position:relative;
+            left:500px;
+            top:50px;
+            background-color: coral;
+
+        }
+        #task7{
+            border: 1px solid red;
+            max-width: 300px;
+            position: sticky;
+            left:10px;
+            margin: 5px;
+        }
+        #task8{
+            position: absolute;
+            left: 260px;
+            bottom:235px
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="container" id="task">1</div>
+    <div class="container" id="task2">2</div>
+    <div class="container" id="task3">3 Fixed</div>
+    <div class="container" id="task4">4 Absolute</div>
+
+    <div class="container" id="task5">5</div> 
+    <div id="task6">6 Sticky</div>
+    <div id="task7"><img src="./image/bike.jpg" alt="Bike" width="300px" ></div>
+    <div id="task8"><b>Bike</b></div>
+    </div>   
+</body>
+</html>

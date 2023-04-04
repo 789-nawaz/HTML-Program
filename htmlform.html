@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+        .fieldset {
+            background-color: rgb(114, 5, 69);
+            color: white;
+            text-align: center;
+            margin: 50px;
+            padding: 10px;
+            /* display: flex; */
+            /* justify-content: center; */
+            width: 80%;
+        }
+
+        div {
+            background-color: rgb(155, 8, 94);
+            width: 30%;
+            padding: 10px;
+            padding-right: 60px;
+        }
+
+        button {
+            width: 300px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .fieldset label{
+            display:flex;
+            justify-content: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <form class="form">
+            <fieldset class="fieldset">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="your name"><br><br>
+                <label for="mail">Email:</label>
+                <input type="text" id="mail" name="mail" placeholder="your email"><br><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password"><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="Phone"><br><br>
+                <label for="dio">Gender:</label>
+                <input type="radio" id="dio" name="Gender:" value="Male">
+                <span>Male</span>
+                <input type="radio" id="dio" name="Gender:" value="Female">
+                <span>Female</span>
+                <input type="radio" id="dio" name="Gender:" value="Others">
+                <span>Others<span><br><br>
+                <label for="Lang">Language:</label>
+                <select name="language" id="lang">
+                    <option value="Select">Select Language</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Urdu">Urdu</option>
+                </select><br><br>
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" name="Zaipcode"><br><br>
+                <label for="about">About:</label>
+                <textarea name="message" id="about" cols="25" rows="2"
+                    placeholder="write about yoursels..."></textarea><br><br>
+                <button>Register</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

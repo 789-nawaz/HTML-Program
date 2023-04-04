@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: black;
+            height: 60px;
+            width:100%;
+            align-items: center;
+            justify-content: right;
+        }
+
+        .flex-container>div {
+            color: white;
+            margin: 30px;
+
+        }
+
+        .container:hover {
+            color: white;
+            height: 40px;
+            padding-top: 5px;
+        }
+
+        .abc {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            font-size: larger;
+        }
+
+        #task {
+            border: 1px solid none;
+            display: inline-block;
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            background-color: lightgreen;
+        }
+
+        .flex-container2 {
+            background-color: white;
+            background-position: center;
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .flex-container2 h1{
+           text-align: center;
+           padding: 25px 0px;
+        }
+
+        .container2 {
+            width: 1170px;
+            margin: auto;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .container-item{
+            flex-basis: 25%;
+            margin: 10px 0px;
+            box-shadow: 0px 0px 10px 3px lightgray;
+            text-align: center;
+            padding: 20px 0px;
+            
+        }
+        .container-item h3{
+            padding:10px;
+        }
+        .container-item p{
+            padding:10px;
+            font-size: 12px;
+        }
+ 
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="container" title="home">Services</div>
+        <div class="container" title="contact">Contact</div>
+        <div class="container" title="help">Help</div>
+        <div class="container" title="about">About</div>
+        <div class="container" title="about">About</div>
+
+    </div>
+    <div class="abc"><img src="./image/home1.png" alt="home" title="Home" height="60px" width="60px" title="Home"></div>
+    <div id="task"></div>
+    <div class="flex-container2">
+        <h1>Our Services</h1>
+        <div class="container2">
+            <div class="container-item"><img src="./image/BalconyRailing.jpg" alt="balcony" width="220px" height="220px">
+                <h3>Balcony Railing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, itaque!</p>
+                <button>Read More</button>
+            </div>
+            <div class="container-item"><img src="./image/spider glazing.jpeg" alt="balcony" width="220px" height="220px">
+                <h3>Spider Glass Facade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, itaque!</p>
+                <button>Read More</button>
+            </div>
+            <div class="container-item"><img src="./image/windowsys.jpeg" alt="balcony" width="220px" height="220px">
+                <h3>Window Systems</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, itaque!</p>
+                <button>Read More</button>
+            </div>
+            <div class="container-item"><img src="./image/aluminium-fins.jpeg" alt="balcony" width="220px" height="220px">
+                <h3>aluminium-fins</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, itaque!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
